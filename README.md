@@ -44,6 +44,6 @@ pip install odooshow
 ### Missing:
 * different options, and what they do.
 * many other things...
-#. ñlkjh
-#. diffrent options, and what they do.
-#. other things... (again ¿?)
+- ñlkjh
+* diffrent options, and what they do.
+- other things... (again ¿?)
