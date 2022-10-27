@@ -7,8 +7,8 @@ Basic usage:
 
 ```python
 from odooshow import show
-
 partners = env["res.partner"].search([])  # Any recordset will do
+
 show(partners)
 ```
 
