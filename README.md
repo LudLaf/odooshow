@@ -40,11 +40,10 @@ pip install odooshow
 - Configurable column totals. Now we're getting them from the field info.
 
 
-
 ---
-Missing:
+### Missing:
 #. different options, and what they do.
 #. many other things...
 #. ñlkjh
-#. different options, and what they do.
+#. diffrent options, and what they do.
 #. other things... (again ¿?)
