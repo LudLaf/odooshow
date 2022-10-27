@@ -38,3 +38,10 @@ pip install odooshow
 
 - Make an Odoo module so we can plug the funcionality directly into the model abstract.
 - Configurable column totals. Now we're getting them from the field info.
+
+
+
+---
+Missing:
+* different options, and what they do.
+* i
