@@ -43,5 +43,5 @@ pip install odooshow
 
 ---
 Missing:
-* different options, and what they do.
-* i
+#. different options, and what they do.
+#. other things...
