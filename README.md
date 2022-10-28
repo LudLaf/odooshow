@@ -1,7 +1,7 @@
 # Odoo Show 🔎️
 
 Odoo Show is a python library that uses [`rich`](https://github.com/Textualize/rich) to
-give you goggles when you're diving into the Odoo Shell.
+give you goggles when diving into the Odoo Shell.
 
 Basic usage:
 
