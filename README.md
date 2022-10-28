@@ -16,9 +16,11 @@ This would be the output:
 
 ![Resulting table](./doc/img/fig_1.png)
 
-A small demo with the common usage of its features:
+A quick demo with some common usage features:
 
 [![asciicast](https://asciinema.org/a/525597.svg)](https://asciinema.org/a/525597)
+
+
 
 ## Installation
 
@@ -38,6 +40,38 @@ pip install odooshow
 
 - Make an Odoo module so we can plug the funcionality directly into the model abstract.
 - Configurable column totals. Now we're getting them from the field info.
+
+
+---
+## Usage
+* add `odooshow` library to your pip.txt
+* run `invoke img-build; docker-compose down`
+* then, run `docker-compose run --rm -l traefik.enable=false odoo shell` # for executing the odoo shell
+* when inside the shell, run:
+>>> from odooshow import show
+ * then you can start tinkering with:
+>>> show(self)
+
+>>> show(env["res.partner"])
+
+>>> show(env["res.partner"].search([]))
+
+>>> show(env["res.partner"].search([], limit=1))
+
+>>> show(env["res.partner"].search([], limit=10), groupby="parent_id")
+
+>>> show(env["sale.order"].search([]))
+
+>>> show(env["sale.order"].search([]), show_footer=True)
+
+>>> show(env["sale.order"].search([]), ["name", "amount_total"], show_footer=True)
+
+>>> show(env["sale.order"].search([]).order_line, ["product_id", "product_uom_qyt", "price_unit", "price_subtotal"], show_footer=True)
+
+>>> show(env["sale.order"].search([]).order_line, ["product_id", "product_uom_qyt", "price_unit", "price_subtotal"], show_footer=True, groupby="order_id")
+
+>>> show(env["sale.order"].search([]).order_line, ["product_id", "product_uom_qyt", "price_unit", "price_subtotal"], show_footer=True, groupby="order_id", partials=True)
+
 
 
 ---
